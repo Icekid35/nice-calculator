@@ -178,7 +178,7 @@ width: 100%;
 }
 
 .equals{
-  font-size: 1rem
+  font-size: 1rem;
   color: var(--equalscolor);
   background: var(--equalsbg);
   box-shadow: 0px 4px 2px  var(--equalsshadow);
