@@ -205,3 +205,22 @@ width: 100%;
 
 }
 
+@media (max-width:650px) {
+  .numbersholder{
+    grid-gap: .9rem;
+  }
+  .body{
+    padding: 1rem;
+    grid-auto-rows: 3rem;
+  }
+  .bottom{
+    grid-gap: .9rem;
+    grid-auto-rows: 3rem;
+  }
+  .screen{
+    padding: 1rem;
+  }
+  main{
+    margin-top: 0px;
+  }
+}
