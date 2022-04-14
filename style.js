@@ -54,7 +54,6 @@ var options=[
 
 
 var switchbars=document.querySelectorAll('.switchbar')
-
 switchbars.forEach((bar,index)=>{
   
   bar.addEventListener('click',(e)=>{
@@ -69,9 +68,13 @@ switchbars.forEach((bar,index)=>{
 var rootEle=document.documentElement.style
 Object.keys(reset).forEach((key,i)=>{
   rootEle.setProperty(`--${key}`,Object.values(reset)[i])
+  localStorage.setItem('prefered',index)
 })
 
 
   })
 })
   
+if(localStorage.getItem('prefered')){
+  switchbars[localStorage.getItem('prefered')].click()
+}
